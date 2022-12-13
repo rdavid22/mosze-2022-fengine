@@ -34,7 +34,7 @@ std::vector<Frame> ReadFrames()
 
         for (auto answer : frame["answers"])
         {
-            answers.push_back(Answer(answer["reply"],answer["frame_id"]));
+            answers.push_back(Answer(answer["frame_id"],answer["reply"]));
         }
         Frame new_frame = Frame(frame["id"],frame["text"],answers);
 
