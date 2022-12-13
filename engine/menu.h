@@ -118,7 +118,7 @@ public:
 
         // If not, set the default name & scene number.
         new_player.SetName(user_input);
-        new_player.SetFrameId(1);
+        new_player.SetFrameId(0);
 
         // Add player to global list.
         all_player_.push_back(new_player);
