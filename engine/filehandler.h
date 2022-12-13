@@ -2,6 +2,8 @@
 #define FILE_HANDLER_H_
 
 #include "objects/frame.h"
+#include "objects/player.h"
+
 
 #include <vector>
 #include <iostream>
@@ -41,7 +43,20 @@ std::vector<Frame> ReadFrames()
 
     return frames;
 }
-/*
+std::vector<Player> ReadPlayers()
+{
+     std::ifstream file("../players.json");
+    json data = json::parse(file);
+
+    std::vector<Player> players = std::vector<Player>();
+
+    for (auto player : data["players"])
+    {
+        players.push_back(Player(player["name"],player["frame_id"]));
+    }
+    return players;
+}
+
 void SavePlayer(Player player)
 {
     json savefile;
@@ -49,7 +64,7 @@ void SavePlayer(Player player)
     bool thereWasAPlayer = false;
     for (auto p : players)
     {
-        if (p.GetPlayerName() == player.GetPlayerName())
+        if (p.GetName() == player.GetName())
         {
             thereWasAPlayer = true;
         }
@@ -62,40 +77,21 @@ void SavePlayer(Player player)
     {
         if (thereWasAPlayer)
         {
-            if (p.GetPlayerName() == player.GetPlayerName())
+            if (p.GetName() == player.GetName())
             {
                 p = player;
             }
         }
-        json inventory;
         json answers;
 
-        auto inv = p.GetInventory();
-        auto ans = p.GetAnswers();
-        for (auto i : inv)
-        {
-            inventory.push_back(
-                {{"name", i.item_name_},
-                 {"amount", i.amount_}});
-        }
-        for(auto a : ans)
-        {
-            answers.push_back(
-                {{"id", a.conversation_id_},
-                {"answer", a.answer_}});
-        }
-
         savefile["players"].push_back(
-            {{"playerName", p.GetPlayerName()},
-             {"currentRoom", p.GetCurrentRoomId()},
-             {"invertoryList", inventory},
-             {"conversations", answers}});
+            {{"name", p.GetName()},
+             {"frame_id", p.GetFrameId()}});
     }
 
-    std::ofstream o("../game/savegame.json");
+    std::ofstream o("../players.json");
     o << std::setw(4) << savefile << std::endl;
     o.
     close();
 }
-*/
 #endif
