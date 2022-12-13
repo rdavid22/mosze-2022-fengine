@@ -12,6 +12,7 @@ class Game
 {
 private:
     Player current_player_;
+    Frame current_frame_;
     std::vector<Frame> all_frames_;
     std::vector<Player> all_players_;
     bool ExitGame = false;
@@ -37,9 +38,35 @@ public:
     {
         while (!ExitGame)
         {
+            PrintFrame();
+            std::string input = console::input();
+            if(input == "exit"){return;}
+            GoToFrame(std::stoi(input)); 
         }
     }
 
+    void PrintFrame()
+    {
+        console::clear();
+        console::printLineAnim(GREEN, current_frame_.GetText());
+        uint16_t selector = 1;
+        for (auto ans : current_frame_.GetAnswers())
+        {
+            console::printLineAnim(BLUE, selector + ": " + ans.GetText());
+            selector++;
+        }
+    }
+    bool GoToFrame(uint16_t selector)
+    {
+        auto ans = current_frame_.GetAnswers();
+        if (selector > ans.size() || selector < 1)
+        {
+            return false;
+        }
+
+        current_frame_ = GetFrameById(ans[selector - 1].GetId());
+        return true;
+    }
     Frame GetFrameById(uint16_t id_to_get)
     {
         for (auto frame : all_frames_)
@@ -49,6 +76,7 @@ public:
                 return frame;
             }
         }
+        return Frame();
     }
 };
 
