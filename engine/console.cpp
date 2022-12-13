@@ -204,24 +204,3 @@ std::string console::input()
     std::cin >> in;
     return in;
 }
-
-void console::PrintError(uint16_t error_message)
-{
-    switch (error_message)
-    {
-    case kErrorInputWasString:
-        console::printLineAnim(RED, "Nem lehet szöveget beírni.");
-        break;
-    case kErrorOptionDoesNotExist:
-        console::printLineAnim(RED, "Nem létezik ilyen választási lehetőség.");
-        break;
-    case kErrorPlayerAlreadyExist:
-        console::printLineAnim(RED, "Egy ilyen nevű játékos már létezik!");
-        break;
-    case kErrorPlayerDoesNotExist:
-        console::printLineAnim(RED, "A kiválaszott játékos nem létezik!");
-        break;
-    default:
-        break;
-    }
-}

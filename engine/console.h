@@ -2,7 +2,6 @@
 #define consoleheader
 #include <iostream>
 #include <time.h>
-#include "../enum/enum_messages.h"
 
 #if _WIN32
 #include <windows.h>
@@ -155,12 +154,5 @@ namespace console
      * @return std::string 
      */
     std::string input();
-
-    /**
-     * @brief Print out a custom error message.
-     * 
-     */
-    void PrintError(uint16_t error_message);
-
 }
 #endif
