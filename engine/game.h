@@ -7,6 +7,8 @@
 #include "filehandler.h"
 #include "console.h"
 #include "menu.h"
+#include "helper.h"
+
 
 class Game
 {
@@ -56,7 +58,15 @@ public:
             }
             else if (input == "reset")
             {
-                current_player_.SetFrameId(0);
+                current_frame_ = GetFrameById(0);
+                continue;
+            }
+            else if (StartsWith(input,"go"))
+            {
+                auto parts = Split(input," ");
+                int id = std::stoi(parts[1]);
+                current_frame_ = GetFrameById(id);
+                continue;
             }
             GoToFrame(std::stoi(input));
         }
