@@ -1,10 +1,14 @@
 #include <iostream>
-#include "console.h"
-#include "filehandler.h"
-#include "objects/frame.h"
-#include "objects/player.h"
+#include "game.h"
 
 int main()
 {
+    Game game;
+
+    game.LoadPlayers();
+    game.LoadFrames();
+    game.LoadMenu();
+    game.Start();
+    
     return 0;
 }
