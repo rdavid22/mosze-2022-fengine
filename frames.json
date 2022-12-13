@@ -2,19 +2,47 @@
 	"frames": [
 		{
 			"id": 1,
-			"text": "Szia. ez itt a jatek!",
+			"text": "Lassan kinyitod a szemed. 7:51-et mutat az ora. Ataludtad az ebresztodet es 10 percen belul be kell erned a munkahelyre. Panikolva kikelsz az agyadbol es magadra huzod a ruhaidat. \n Elotted a haloszobad ket ajtaja, egyik a konyhaba vezet, masik a furdoszobaba. Mit teszel?",
 			"answers": [
 				{
-					"reply":"Szuper!",
+					"reply":"1. Konyha",
 					"frame_id" : 2
 				},
 				{
-					"reply" : "Azta!",
-					"frame_id" : 1
+					"reply" : "2. Furdoszoba",
+					"frame_id" : 3
 					
 				}
 			]
 		},
+		{
+			"id": 2,
+			"text": "Sietve berohansz a furdobe. Egy kezzel a fogkefehez nyulsz, masikkal meg az ingedet igazitod. Nagy kapkodasodkozepette valahogy sikerul feloltoznod es megmosnod a fogad, de a reggelire mar ugy nez ki, nem lesz ido. Felkapod a taskadat, majd kirohansz az ajton. \n Toled balra a kocsibejarodban all a autod, mogotte a garazsban a falnak tamasztva a biciklid. 5 perced van beerni munkaba. Mit teszel?",
+			"answers": [
+				{
+					"reply" : "Igen!",
+					"frame_id" : 2
+				},
+				{
+					"reply" : "Nem",
+					"frame_id" : 1
+				}
+			]
+		}
+		{
+			"id": 2,
+			"text": "Jol valaszoltal?",
+			"answers": [
+				{
+					"reply" : "Igen!",
+					"frame_id" : 2
+				},
+				{
+					"reply" : "Nem",
+					"frame_id" : 1
+				}
+			]
+		}
 		{
 			"id": 2,
 			"text": "Jol valaszoltal?",
