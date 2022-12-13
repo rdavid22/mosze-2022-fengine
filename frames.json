@@ -12,7 +12,7 @@
 		},
 		{
 			"id": 1,
-			"text": "Lassan kinyitod a szemed. 7:51-et mutat az ora. Ataludtad az ebresztodet es 10 percen belul be kell erned a munkahelyre. Panikolva kikelsz az agyadbol es magadra huzod a ruhaidat. \n Elotted a haloszobad ket ajtaja, egyik a konyhaba vezet, masik a furdoszobaba. Mit teszel?",
+			"text": "CHAPTER 1: INTRO.EXE \nLassan kinyitod a szemed. 7:51-et mutat az ora. Ataludtad az ebresztodet es 10 percen belul be kell erned a munkahelyre. Panikolva kikelsz az agyadbol es magadra huzod a ruhaidat. \n Elotted a haloszobad ket ajtaja, egyik a konyhaba vezet, masik a furdoszobaba. Mit teszel?",
 			"answers": [
 				{
 					"reply":"Furdoszoba",
@@ -49,11 +49,11 @@
 			"text": "Kifutsz a konyhaba, egy gyors mozdulattal kirantod ahutoajtot majd kiveszel belole egy bontott csomag parizert, szeletelt sajtot es vajat. Rekordsebesseggel kened meg az utolso ket megmaradt szelet kenyeret, osszedobsz egy gyors szendvicset, es meg ugyanazzal a lendulettel a felet a szadba tomod. Az orad mar 7:55-ot mutat, ugy latszik kenytelen leszel kihagyni a mosakodast. Felkapod a taskadat, majd kirohansz az ajton. \nToled balra a kocsibejarodban all a autod, mogotte a garazsban a falnak tamasztva a biciklid. 5 perced van beerni munkaba. \nMit teszel?",
 			"answers": [
 				{
-					"reply" : "Igen!",
+					"reply" : "Auto!",
 					"frame_id" : 5
 				},
 				{
-					"reply" : "Nem",
+					"reply" : "Bicikli",
 					"frame_id" : 6
 				}
 			]
@@ -65,6 +65,26 @@
 				{
 					"reply" : "Restart",
 					"frame_id" : 0
+				}
+			]
+		},
+		{
+			"id": 5,
+			"text": "Meg szerencse hogy a slusszkulcsod pont a nadragzsebedben maradt. Kinyitod a kocsid, beszallsz, eltekered az inditokulcsot; megkonnyebbules tolt el, hogy elsore elindul, mar csak egy lemerult akksi vagy egy ures tank hianyzott volna. Csikorgo gumikkal hajtasz le az utra. Utkozben viszont bekovetkezik az, amitol legbelul a legjobban tartottal: dugoba kerulsz. \nAhogy az ora 8:00-t ut, a panikhangulatod szomoru beletorodesbe torkollik at. Vegul nagynehezen megindul a forgalom, es lassan de biztosan elered az uticelod.",
+			"answers": [
+				{
+					"reply" : "Folytatas",
+					"frame_id" : 7
+				}
+			]
+		},
+		{
+			"id": 6,
+			"text": "Valami azt sugallja szamodra, hogy autoval munkaba sietni a reggeli csucsforgalom kozepette nem a legjobb otlet, viszont kerdeses, hogy vajon kepes vagy e idore beerni biciklivel. Eleg magabiztosnak erzed magad, ezert gyorsan biciklire pattansz, majd nekiallsz tekerni amilyen intenziven csak a labaid birjak. Nagyjabol 5 percnyi Tour de France versenyzoket megszegyenito tekeres utan rapillantasz a karoradra, es tudvan hogy meg feluton sem vagy, elszall beloled a remeny, es csalodottan, lassabb tempoban tekersz tovabb. \nUtkozben azonban rapillantasz az uton sorakozo autok szazaira, es enyhe karorvendo altonussal ketelkedsz magadban afelol, hogy valoban jobban jartal volna-e, ha megis a kocsidat valasztod. Lassan de biztosan elered az uticelod.",
+			"answers": [
+				{
+					"reply" : "Folytatas",
+					"frame_id" : 7
 				}
 			]
 		}
