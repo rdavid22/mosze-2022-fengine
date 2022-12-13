@@ -52,8 +52,6 @@ public:
                 current_player_.SetFrameId(current_frame_.GetId());
                 SavePlayer(current_player_);
                 console::printLine(PURPLE, "Sikeresen mentve!");
-
-                return;
             }
             GoToFrame(std::stoi(input));
         }
