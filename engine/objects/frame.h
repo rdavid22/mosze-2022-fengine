@@ -23,15 +23,15 @@ public:
     {
     }
 
-    uint16_t GetId()
+    uint16_t GetId() const
     {
         return id_;
     }
-    std::string GetText()
+    std::string GetText() const
     {
         return text_;
     }
-    std::vector<Answer> GetAnswers()
+    std::vector<Answer> GetAnswers() const
     {
         return answers_;
     }

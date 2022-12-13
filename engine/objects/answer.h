@@ -20,16 +20,16 @@ public:
         id_ = id;
     }
 
-    uint16_t GetId()
+    uint16_t GetId() const
     {
         return id_;
     }
-    std::string GetText()
+    std::string GetText() const 
     {
         return text_;
     }
 
-    void SetId(uint16_t id)
+    void SetId(uint16_t id) 
     {
         id_ = id;
     }

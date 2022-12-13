@@ -18,12 +18,12 @@ public:
 
     Player() {}
 
-    std::string GetName()
+    std::string GetName() const
     {
         return name_;
     }
 
-    uint16_t GetFrameId()
+    uint16_t GetFrameId() const
     {
         return frame_id_;
     }
