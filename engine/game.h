@@ -6,6 +6,7 @@
 #include "objects/player.h"
 #include "filehandler.h"
 #include "console.h"
+#include "menu.h"
 
 class Game
 {
@@ -13,7 +14,6 @@ private:
     Player current_player_;
     std::vector<Frame> all_frames_;
     std::vector<Player> all_players_;
-    bool StartGame = false;
     bool ExitGame = false;
 
 public:
@@ -29,9 +29,8 @@ public:
 
     void LoadMenu()
     {
-        while (!StartGame)
-        {
-        }
+        Menu menu;
+        menu.PrintMainMenu();
     }
 
     void Start()
