@@ -47,6 +47,14 @@ public:
             {
                 return;
             }
+            if (input == "save")
+            {
+                current_player_.SetFrameId(current_frame_.GetId());
+                SavePlayer(current_player_);
+                console::printLine(PURPLE, "Sikeresen mentve!");
+
+                return;
+            }
             GoToFrame(std::stoi(input));
         }
     }
@@ -55,11 +63,11 @@ public:
     {
         console::clear();
         // Animáció ideiglenesen törlésre kerülhet tesztelés idejéig
-        console::printLineAnim(GREEN, current_frame_.GetText());
+        console::printLine(GREEN, current_frame_.GetText());
         uint16_t selector = 1;
         for (auto answers : current_frame_.GetAnswers())
         {
-            console::printLineAnim(BLUE,std::to_string(selector)+": "+answers.GetText());
+            console::printLine(BLUE, std::to_string(selector) + ": " + answers.GetText());
             selector++;
         }
     }
