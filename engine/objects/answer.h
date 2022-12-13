@@ -11,7 +11,9 @@ private:
     std::string text_;
 
 public:
-
+    Answer()
+    {
+    }
     Answer(uint16_t id, std::string text)
     {
         text_ = text;
@@ -26,8 +28,6 @@ public:
     {
         return text_;
     }
-
-
 
     void SetId(uint16_t id)
     {

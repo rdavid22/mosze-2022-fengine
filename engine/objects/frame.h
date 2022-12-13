@@ -7,22 +7,21 @@
 
 class Frame
 {
-    private:
-
+private:
     uint16_t id_;
     std::string text_;
     std::vector<Answer> answers_;
 
-    public:
-
+public:
     Frame(uint16_t id, std::string text, std::vector<Answer> answers)
     {
         id_ = id;
         text_ = text;
         answers_ = answers;
-
     }
-
+    Frame()
+    {
+    }
 
     uint16_t GetId()
     {
@@ -37,7 +36,6 @@ class Frame
         return answers_;
     }
 
-
     void SetId(uint16_t id)
     {
         id_ = id;
@@ -50,8 +48,6 @@ class Frame
     {
         answers_ = answers;
     }
-
-
 };
 
 #endif
