@@ -38,6 +38,7 @@ public:
 
     void Start()
     {
+        current_frame_ = GetFrameById(current_player_.GetFrameId());
         while (!exit_game_)
         {
             PrintFrame();
