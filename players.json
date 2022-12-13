@@ -1,0 +1,12 @@
+{
+    "players": [
+        {
+            "frame_id": 0,
+            "name": "HiperGlob"
+        },
+        {
+            "frame_id": 0,
+            "name": "NyomiGlob"
+        }
+    ]
+}
