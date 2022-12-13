@@ -1,6 +1,16 @@
 {
 	"frames": [
 		{
+			"id": 999,
+			"text": "GAME OVER! RETRY? \n'Exit': kilepes a jatekbol ",
+			"answers": [
+				{
+					"reply":"Retry",
+					"frame_id" : 0
+				}
+			]
+		},
+		{
 			"id": 0,
 			"text": "SYSTEM INITIALIZED. WELCOME! \n*szamjegy*: valaszlehetoseg kivalasztasa \n'Exit': kilepes a jatekbol ",
 			"answers": [
@@ -60,11 +70,11 @@
 		},
 		{
 			"id": 4,
-			"text": "Veszel egy nagy levegot, megallsz egy pillanatra es elgondolkodsz magadban: 'miert is kene kapkodnom? Minek panikoljak? Mar ugyis mindegy, nem erdekel az egesz!' Elegedett fejjel sohajtasz egyet, lelokod a vekkert a komodrol, majd nyugodt lelekkel visszamaszol az agyba. \nJATEK VEGE: LESZ@ROM ENDING \n 1: Restart, 'Exit': kilepes",
+			"text": "Veszel egy nagy levegot, megallsz egy pillanatra es elgondolkodsz magadban: 'miert is kene kapkodnom? Minek panikoljak? Mar ugyis mindegy, nem erdekel az egesz!' Elegedett fejjel sohajtasz egyet, lelokod a vekkert a komodrol, majd nyugodt lelekkel visszamaszol az agyba. \nENDING: LESZ@ROM",
 			"answers": [
 				{
-					"reply" : "Restart",
-					"frame_id" : 0
+					"reply" : "END",
+					"frame_id" : 999
 				}
 			]
 		},
@@ -85,6 +95,16 @@
 				{
 					"reply" : "Folytatas",
 					"frame_id" : 7
+				}
+			]
+		},
+		{
+			"id": 7,
+			"text": "TEMP RESET",
+			"answers": [
+				{
+					"reply" : "Folytatas",
+					"frame_id" : 999
 				}
 			]
 		}
