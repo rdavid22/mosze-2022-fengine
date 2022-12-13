@@ -15,11 +15,11 @@
 			"text": "Lassan kinyitod a szemed. 7:51-et mutat az ora. Ataludtad az ebresztodet es 10 percen belul be kell erned a munkahelyre. Panikolva kikelsz az agyadbol es magadra huzod a ruhaidat. \n Elotted a haloszobad ket ajtaja, egyik a konyhaba vezet, masik a furdoszobaba. Mit teszel?",
 			"answers": [
 				{
-					"reply":"Konyha",
+					"reply":"Furdoszoba",
 					"frame_id" : 2
 				},
 				{
-					"reply" : "Furdoszoba",
+					"reply" : "Konyha",
 					"frame_id" : 3
 					
 				},
@@ -35,26 +35,26 @@
 			"text": "Sietve berohansz a furdobe. Egy kezzel a fogkefehez nyulsz, masikkal meg az ingedet igazitod. Nagy kapkodasodkozepette valahogy sikerul feloltoznod es megmosnod a fogad, de a reggelire mar ugy nez ki, nem lesz ido. Felkapod a taskadat, majd kirohansz az ajton. \n Toled balra a kocsibejarodban all a autod, mogotte a garazsban a falnak tamasztva a biciklid. 5 perced van beerni munkaba. Mit teszel?",
 			"answers": [
 				{
-					"reply" : "Igen!",
-					"frame_id" : 2
+					"reply" : "Auto",
+					"frame_id" : 5
 				},
 				{
-					"reply" : "Nem",
-					"frame_id" : 1
+					"reply" : "Bicikli",
+					"frame_id" : 6
 				}
 			]
 		},
 		{
-			"id": 2,
-			"text": "Jol valaszoltal?",
+			"id": 3,
+			"text": "Kifutsz a konyhaba, egy gyors mozdulattal kirantod ahutoajtot majd kiveszel belole egy bontott csomag parizert, szeletelt sajtot es vajat. Rekordsebesseggel kened meg az utolso ket megmaradt szelet kenyeret, osszedobsz egy gyors szendvicset, es meg ugyanazzal a lendulettel a felet a szadba tomod. Az orad mar 7:55-ot mutat, ugy latszik kenytelen leszel kihagyni a mosakodast. Felkapod a taskadat, majd kirohansz az ajton. \nToled balra a kocsibejarodban all a autod, mogotte a garazsban a falnak tamasztva a biciklid. 5 perced van beerni munkaba. \nMit teszel?",
 			"answers": [
 				{
 					"reply" : "Igen!",
-					"frame_id" : 2
+					"frame_id" : 5
 				},
 				{
 					"reply" : "Nem",
-					"frame_id" : 1
+					"frame_id" : 6
 				}
 			]
 		},
