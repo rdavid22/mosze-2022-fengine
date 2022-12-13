@@ -47,12 +47,16 @@ public:
             {
                 return;
             }
-            if (input == "save")
+            else if (input == "save")
             {
                 current_player_.SetFrameId(current_frame_.GetId());
                 SavePlayer(current_player_);
                 console::printLine(PURPLE, "Sikeresen mentve!");
                 continue;
+            }
+            else if (input == "reset")
+            {
+                current_player_.SetFrameId(0);
             }
             GoToFrame(std::stoi(input));
         }
