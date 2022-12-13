@@ -1,8 +1,8 @@
 {
-    "players" : [
+    "players": [
         {
-            "name" : "Glob",
-            "frame_id" : 1
+            "frame_id": 2,
+            "name": "Glob"
         }
     ]
 }
