@@ -23,8 +23,17 @@ using json = nlohmann::json;
 std::vector<Frame> ReadFrames()
 {
 
+    std::ifstream file("../frames.json");
+    json data = json::parse(file);
+
     std::vector<Frame> frames = std::vector<Frame>();
    
+    for(auto frame : data["frames"])
+    {
+        Frame new_frame()
+    }
+
+
     return frames;
 }
 /*
