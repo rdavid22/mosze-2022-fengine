@@ -29,8 +29,8 @@ public:
 
     void LoadMenu()
     {
-        Menu menu;
-        menu.PrintMainMenu();
+        Menu menu(all_frames_, all_players_);
+        menu.LoadMainMenu();
     }
 
     void Start()
@@ -42,9 +42,9 @@ public:
 
     Frame GetFrameById(uint16_t id_to_get)
     {
-        for(auto frame : all_frames_)
+        for (auto frame : all_frames_)
         {
-            if(id_to_get == frame.GetId())
+            if (id_to_get == frame.GetId())
             {
                 return frame;
             }
