@@ -32,7 +32,7 @@ std::vector<Frame> ReadFrames()
     {
         std::vector<Answer> answers = std::vector<Answer>();
 
-        for (auto answer : frame["asnwers"])
+        for (auto answer : frame["answers"])
         {
             answers.push_back(Answer(answer["reply"],answer["frame_id"]));
         }
