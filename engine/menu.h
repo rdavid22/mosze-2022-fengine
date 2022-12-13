@@ -37,14 +37,14 @@ public:
         console::printLine(BLUE, "1 - jatekos betoltese");
         console::printLine(BLUE, "2 - jatekos letrehozasa");
         console::printLine(BLUE, "3 - jatekos torlese");
-        console::printLine(BLUE, "0 - kilepes");
+        console::printLine(BLUE, "4 - jatekosok torlese");
+        console::printLine(BLUE, "5 - dani specialis kerese");
     }
 
     void GetMenuOption()
     {
         std::string option = console::input();
-
-        if (option == "1")
+         if (option == "1")
         {
             LoadPlayerScreen();
         }
@@ -57,6 +57,19 @@ public:
         else if (option == "3")
         {
             DeletePlayerScreen();
+        }
+        else if (option == "4")
+        {
+            all_player_.clear();
+            DeletePlayers();
+        }
+        else if (option == "5")
+        {
+            for (int i = 0; i < all_player_.size(); i++)
+            {
+                all_player_[i].SetFrameId(0);
+            }
+            ResetPlayers();
         }
 
         else
@@ -149,8 +162,8 @@ public:
             uint16_t index = stoi(user_input);
             if (index <= all_player_.size() && index >= 0)
             {
-                all_player_.erase(all_player_.begin() + index);
-                SavePlayer(current_player_);
+                all_player_.erase(all_player_.begin() + (index - 1));
+                DeletePlayerByName(all_player_[(index - 1)].GetName());
             }
             // Invalid input
             else
@@ -169,7 +182,6 @@ public:
             console::printLineAnim(BLUE, player.GetName());
         }
     }
-
     Player GetCurrentPlayer()
     {
         return current_player_;
