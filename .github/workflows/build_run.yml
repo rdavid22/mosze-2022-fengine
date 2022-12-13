@@ -1,41 +1,41 @@
 
-# name: Build & Run & Test engine on Linux
+name: Build & Run & Test engine on Linux
 
-# # Run vm on pushing to Development
-# on:
-#   push:
-#     branches:
-#       - "Development"
+# Run vm on pushing to Development
+on:
+  push:
+    branches:
+      - "Development"
 
-# # Setup linux & windows environment
-# jobs:
-#   Build:
-#     runs-on: ubuntu-latest
-#     steps:
-#     - uses: actions/checkout@v3
+# Setup linux & windows environment
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
 
-# #Download cmake
-#     - name: Setup cmake
-#       uses: jwlawson/actions-setup-cmake@v1.13
-#       with:
-#         cmake-version: '3.22.1'
+#Download cmake
+    - name: Setup cmake
+      uses: jwlawson/actions-setup-cmake@v1.13
+      with:
+        cmake-version: '3.22.1'
 
-# # Creating build directory and run cmake
-#     - name: "Create build directory and run CMake"
-#       run: cmake -S . -B build -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Release
+# Creating build directory and run cmake
+    - name: "Create build directory and run CMake"
+      run: cmake -S . -B build -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Release
 
-# # Build project
-#     - name: "Build Project" 
-#       run: cmake --build build --target all --config Release -- -j4 
+# Build project
+    - name: "Build Project" 
+      run: cmake --build build --target all --config Release -- -j4 
 
-# # Run game engine
-#     - name: "Run engine"
-#       run: |
-#         cd build
-#         ./RunEngine
-# # Running gtests only on Linux.
-# # It does work on local windows environment, but it's not on Github Actions windows environment.
-#     - name: "Run unit tests"
-#       run: |
-#         cd build
-#         ./google_tests
+# Run game engine
+    - name: "Run engine"
+      run: |
+        cd build
+        ./RunEngine
+# Running gtests only on Linux.
+# It does work on local windows environment, but it's not on Github Actions windows environment.
+    - name: "Run unit tests"
+      run: |
+        cd build
+        ./google_tests
