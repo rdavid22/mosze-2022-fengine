@@ -63,6 +63,7 @@ public:
             selector++;
         }
     }
+    
     bool GoToFrame(uint16_t selector)
     {
         auto ans = current_frame_.GetAnswers();
@@ -74,6 +75,7 @@ public:
         current_frame_ = GetFrameById(ans[selector - 1].GetId());
         return true;
     }
+
     Frame GetFrameById(uint16_t id_to_get)
     {
         for (auto frame : all_frames_)
