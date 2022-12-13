@@ -3,7 +3,6 @@
 
 #include "objects/frame.h"
 
-
 #include <vector>
 #include <iostream>
 #include <fstream>
@@ -19,7 +18,6 @@ using json = nlohmann::json;
  * @return std::vector<Item>
  */
 
-
 std::vector<Frame> ReadFrames()
 {
 
@@ -27,12 +25,17 @@ std::vector<Frame> ReadFrames()
     json data = json::parse(file);
 
     std::vector<Frame> frames = std::vector<Frame>();
-   
-    for(auto frame : data["frames"])
-    {
-        Frame new_frame()
-    }
 
+    for (auto frame : data["frames"])
+    {
+        std::vector<Answer> answers = std::vector<Answer>();
+
+        for (auto answer : frame["asnwers"])
+        {
+            answers.push_back(Answer(answer["reply"],answer["frame_id"]));
+        }
+        Frame new_frame = Frame(frame["id"],frame["text"],answers);
+    }
 
     return frames;
 }

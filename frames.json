@@ -5,10 +5,13 @@
 			"text": "Szia. ez itt a játék!",
 			"answers": [
 				{
-					"Szuper!": 2
+					"reply":"Szuper!",
+					"frame_id" : 2
 				},
 				{
-					"Azta!": 3
+					"reply" : "Azta!",
+					"frame_id" : 3
+					
 				}
 			]
 		},
@@ -17,10 +20,12 @@
 			"text": "Jól válaszoltál?",
 			"answers": [
 				{
-					"Igen": 2
+					"reply" : "Igen!",
+					"frame_id" : 2
 				},
 				{
-					"nem": 3
+					"reply" : "Nem",
+					"frame_id" : 3
 				}
 			]
 		}
