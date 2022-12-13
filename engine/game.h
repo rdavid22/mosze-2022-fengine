@@ -61,6 +61,11 @@ public:
                 current_frame_ = GetFrameById(0);
                 continue;
             }
+            else if (input == "wat")
+            {
+                system("start https://cdn.eteknix.com/wp-content/uploads/2017/12/1-31.jpg");
+                continue;
+            }
             else if (StartsWith(input,"go"))
             {
                 auto parts = Split(input," ");
