@@ -43,18 +43,22 @@ public:
     void GetMenuOption()
     {
         std::string option = console::input();
+
         if (option == "1")
         {
             LoadPlayerScreen();
         }
+
         else if (option == "2")
         {
             CreatePlayerScreen();
         }
+
         else if (option == "3")
         {
             DeletePlayerScreen();
         }
+
         else
         {
             console::printLineAnim(RED, "Nincs ilyen opcio!");

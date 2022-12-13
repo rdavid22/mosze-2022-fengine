@@ -201,6 +201,6 @@ void console::printLine(colors color, std::string text)
 std::string console::input()
 {
     std::string in;
-    std::cin >> in;
+    std::getline(std::cin, in);
     return in;
 }
