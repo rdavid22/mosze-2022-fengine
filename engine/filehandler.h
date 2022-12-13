@@ -8,7 +8,7 @@
 #include <iostream>
 #include <fstream>
 // Note: it's temporary, will be deleted later!!!.
-#include <nlohmann/json.hpp>
+#include "json.hpp"
 
 #include "console.h"
 using json = nlohmann::json;
