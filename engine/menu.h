@@ -44,7 +44,7 @@ public:
     void GetMenuOption()
     {
         std::string option = console::input();
-        else if (option == "1")
+         if (option == "1")
         {
             LoadPlayerScreen();
         }
