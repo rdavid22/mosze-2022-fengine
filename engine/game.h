@@ -15,7 +15,7 @@ private:
     Frame current_frame_;
     std::vector<Frame> all_frames_;
     std::vector<Player> all_players_;
-    bool ExitGame = false;
+    bool exit_game_ = false;
 
 public:
     void LoadPlayers()
@@ -32,11 +32,13 @@ public:
     {
         Menu menu(all_frames_, all_players_);
         menu.LoadMainMenu();
+        current_player_ = menu.GetCurrentPlayer();
+        all_players_ = menu.GetAllPlayer();
     }
 
     void Start()
     {
-        while (!ExitGame)
+        while (!exit_game_)
         {
             PrintFrame();
             std::string input = console::input();

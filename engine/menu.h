@@ -4,6 +4,7 @@
 #include "console.h"
 #include "objects/frame.h"
 #include "objects/player.h"
+#include "filehandler.h"
 
 class Menu
 {
@@ -23,7 +24,7 @@ public:
 
     void LoadMainMenu()
     {
-        while (!StartGame)
+        while (!start_game_)
         {
             PrintWelcomeScreen();
             GetMenuOption();
@@ -85,11 +86,74 @@ public:
 
     void CreatePlayerScreen()
     {
+        // Init player object.
+        Player new_player;
+
+        // Get user input.
+        console::printLine(BLUE, "Jatekos neve: (kilepes a 0 beirasaval)");
+        std::string user_input = console::input();
+
+        // Check if user wants to navigate back to the main menu.
+        if (user_input == "0")
+        {
+            start_game_ = false;
+            return;
+        }
+
+        // Check if name already exist.
+        for (auto player : all_player_)
+        {
+            if (player.GetName() == user_input)
+            {
+                console::printLineAnim(RED, "A jatekos mar letezik!");
+                CreatePlayerScreen();
+                return;
+            }
+        }
+
+        // If not, set the default name & scene number.
+        new_player.SetName(user_input);
+        new_player.SetFrameId(1);
+
+        // Add player to global list.
+        all_player_.push_back(new_player);
+
+        // Choose the newly created player to the current player.
+        current_player_ = new_player;
+
+        // Save game state
+        SavePlayer(current_player_);
     }
 
     void DeletePlayerScreen()
     {
+        console::printLine(BLUE, "\nJatekos torlese: (kilepes a 0 beirasaval)");
         PrintAllPlayers();
+        std::string user_input = console::input();
+
+        // Check if user wants to navigate back to the main menu.
+        if (user_input == "0")
+        {
+            start_game_ = false;
+            return;
+        }
+
+        else
+        {
+            // Delete selected player from the savegame file.
+            uint16_t index = stoi(user_input);
+            if (index <= all_player_.size() && index >= 0)
+            {
+                all_player_.erase(all_player_.begin() + index);
+                SavePlayer(current_player_);
+            }
+            // Invalid input
+            else
+            {
+                console::printLineAnim(RED, "A kivalasztott jatekos nem letezik!");
+            }
+        }
+        start_game_ = false;
     }
 
     void PrintAllPlayers()
@@ -103,6 +167,12 @@ public:
 
     Player GetCurrentPlayer()
     {
+        return current_player_;
+    }
+
+    std::vector<Player> GetAllPlayer()
+    {
+        return all_player_;
     }
 };
 
