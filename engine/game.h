@@ -63,7 +63,7 @@ public:
             }
             else if (input == "wat")
             {
-                system("start https://cdn.eteknix.com/wp-content/uploads/2017/12/1-31.jpg");
+                //system("start https://cdn.eteknix.com/wp-content/uploads/2017/12/1-31.jpg");
                 continue;
             }
             else if (StartsWith(input,"go"))
