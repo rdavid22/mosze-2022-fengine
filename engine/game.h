@@ -58,10 +58,8 @@ public:
         uint16_t selector = 1;
         for (auto answers : current_frame_.GetAnswers())
         {
-            std::ostringstream string_builder;
-            string_builder << selector + ": " + answers.GetText();
-            std::string line_to_print = string_builder.str();
-            console::printLineAnim(BLUE, line_to_print);
+      
+            console::printLineAnim(BLUE,std::to_string(selector)+": "+answers.GetText());
             selector++;
         }
     }
