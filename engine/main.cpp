@@ -1,8 +1,9 @@
 #include <iostream>
 #include "game.h"
-
+#include"helper.h"
 int main()
 {
+    PlaySound();
     Game game;
 
     game.LoadPlayers();
