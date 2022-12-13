@@ -1,0 +1,28 @@
+{
+	"frames": [
+		{
+			"id": 1,
+			"text": "Szia. ez itt a játék!",
+			"answers": [
+				{
+					"Szuper!": 2
+				},
+				{
+					"Azta!": 3
+				}
+			]
+		},
+		{
+			"id": 2,
+			"text": "Jól válaszoltál?",
+			"answers": [
+				{
+					"Igen": 2
+				},
+				{
+					"nem": 3
+				}
+			]
+		}
+	]
+}
