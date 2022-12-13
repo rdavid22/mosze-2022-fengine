@@ -71,6 +71,7 @@ public:
             if (selected_player == std::to_string(i + 1))
             {
                 current_player_ = all_player_[i];
+                start_game_ = true;
                 return;
             }
             // Go back to main menu
