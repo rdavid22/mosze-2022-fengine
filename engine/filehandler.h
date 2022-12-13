@@ -19,31 +19,15 @@ using json = nlohmann::json;
  * @return std::vector<Item>
  */
 
-/*
-std::vector<Item> ReadItems()
+
+std::vector<Frame> ReadFrames()
 {
 
-    std::vector<Item> items = std::vector<Item>();
-    std::ifstream file("../game/items.json");
-    json data = json::parse(file);
-
-    for (auto item : data["items"])
-    {
-        Item new_item = Item();
-
-        new_item.SetId(item["id"]);
-        new_item.SetDescription(item["description"]);
-        new_item.SetDisplayName(item["displayName"]);
-        new_item.SetName(item["name"]);
-
-        items.push_back(new_item);
-    }
-
-    file.close();
-
-    return items;
+    std::vector<Frame> frames = std::vector<Frame>();
+   
+    return frames;
 }
-
+/*
 void SavePlayer(Player player)
 {
     json savefile;
