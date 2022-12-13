@@ -58,12 +58,11 @@ public:
         uint16_t selector = 1;
         for (auto answers : current_frame_.GetAnswers())
         {
-      
             console::printLineAnim(BLUE,std::to_string(selector)+": "+answers.GetText());
             selector++;
         }
     }
-    
+
     bool GoToFrame(uint16_t selector)
     {
         auto ans = current_frame_.GetAnswers();
