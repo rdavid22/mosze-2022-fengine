@@ -54,6 +54,7 @@ public:
     void PrintFrame()
     {
         console::clear();
+        // Animáció ideiglenesen törlésre kerülhet tesztelés idejéig
         console::printLineAnim(GREEN, current_frame_.GetText());
         uint16_t selector = 1;
         for (auto answers : current_frame_.GetAnswers())

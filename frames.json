@@ -1,16 +1,31 @@
 {
 	"frames": [
 		{
+			"id": 0,
+			"text": "SYSTEM INITIALIZED. WELCOME! \n*szamjegy*: valaszlehetoseg kivalasztasa \n'Exit': kilepes a jatekbol ",
+			"answers": [
+				{
+					"reply":"Folytatas",
+					"frame_id" : 1
+				}
+			]
+		},
+		{
 			"id": 1,
 			"text": "Lassan kinyitod a szemed. 7:51-et mutat az ora. Ataludtad az ebresztodet es 10 percen belul be kell erned a munkahelyre. Panikolva kikelsz az agyadbol es magadra huzod a ruhaidat. \n Elotted a haloszobad ket ajtaja, egyik a konyhaba vezet, masik a furdoszobaba. Mit teszel?",
 			"answers": [
 				{
-					"reply":"1. Konyha",
+					"reply":"Konyha",
 					"frame_id" : 2
 				},
 				{
-					"reply" : "2. Furdoszoba",
+					"reply" : "Furdoszoba",
 					"frame_id" : 3
+					
+				},
+				{
+					"reply" : "",
+					"frame_id" : 4
 					
 				}
 			]
@@ -44,16 +59,12 @@
 			]
 		},
 		{
-			"id": 2,
-			"text": "Jol valaszoltal?",
+			"id": 4,
+			"text": "Veszel egy nagy levegot, megallsz egy pillanatra es elgondolkodsz magadban: 'miert is kene kapkodnom? Minek panikoljak? Mar ugyis mindegy, nem erdekel az egesz!' Elegedett fejjel sohajtasz egyet, lelokod a vekkert a komodrol, majd nyugodt lelekkel visszamaszol az agyba. \nJATEK VEGE: LESZ@ROM ENDING \n 1: Restart, 'Exit': kilepes",
 			"answers": [
 				{
-					"reply" : "Igen!",
-					"frame_id" : 2
-				},
-				{
-					"reply" : "Nem",
-					"frame_id" : 1
+					"reply" : "Restart",
+					"frame_id" : 0
 				}
 			]
 		}
