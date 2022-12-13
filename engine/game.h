@@ -56,10 +56,10 @@ public:
         console::clear();
         console::printLineAnim(GREEN, current_frame_.GetText());
         uint16_t selector = 1;
-        for (auto ans : current_frame_.GetAnswers())
+        for (auto answers : current_frame_.GetAnswers())
         {
             std::ostringstream string_builder;
-            string_builder << selector + ": " + ans.GetText();
+            string_builder << selector + ": " + answers.GetText();
             std::string line_to_print = string_builder.str();
             console::printLineAnim(BLUE, line_to_print);
             selector++;
