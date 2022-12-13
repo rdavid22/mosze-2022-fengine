@@ -35,6 +35,8 @@ std::vector<Frame> ReadFrames()
             answers.push_back(Answer(answer["reply"],answer["frame_id"]));
         }
         Frame new_frame = Frame(frame["id"],frame["text"],answers);
+
+        frames.push_back(new_frame);
     }
 
     return frames;
