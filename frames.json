@@ -2,7 +2,7 @@
 	"frames": [
 		{
 			"id": 1,
-			"text": "Szia. ez itt a játék!",
+			"text": "Szia. ez itt a jatek!",
 			"answers": [
 				{
 					"reply":"Szuper!",
@@ -17,7 +17,7 @@
 		},
 		{
 			"id": 2,
-			"text": "Jól válaszoltál?",
+			"text": "Jol valaszoltal?",
 			"answers": [
 				{
 					"reply" : "Igen!",
