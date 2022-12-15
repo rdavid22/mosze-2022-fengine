@@ -2,7 +2,7 @@
 	"frames": [
 		{
 			"id": 999,
-			"text": "GAME OVER! RETRY? \n'Exit': kilepes a jatekbol ",
+			"text": "GAME OVER! RETRY? \n\nType 'exit' to quit!",
 			"answers": [
 				{
 					"reply":"Retry",
@@ -12,7 +12,7 @@
 		},
 		{
 			"id": 0,
-			"text": "SYSTEM INITIALIZED. WELCOME! \n*szamjegy*: valaszlehetoseg kivalasztasa \n'Exit': kilepes a jatekbol ",
+			"text": "SYSTEM INITIALIZED. BETA VERSION 0.6\nWELCOME!\n\nType'save' to save your progress!\nType 'exit' to quit!",
 			"answers": [
 				{
 					"reply":"Folytatas",
@@ -70,10 +70,10 @@
 		},
 		{
 			"id": 4,
-			"text": "Veszel egy nagy levegot, megallsz egy pillanatra es elgondolkodsz magadban: 'miert is kene kapkodnom? Minek panikoljak? Mar ugyis mindegy, nem erdekel az egesz!' Elegedett fejjel sohajtasz egyet, lelokod a vekkert a komodrol, majd nyugodt lelekkel visszamaszol az agyba. \nENDING: LESZ@ROM",
+			"text": "Veszel egy nagy levegot, megallsz egy pillanatra es elgondolkodsz magadban: 'miert is kene kapkodnom? Minek panikoljak? Mar ugyis mindegy, nem erdekel az egesz!' Elegedett fejjel sohajtasz egyet, kihuzod a vekkert a konnektorbol, majd nyugodt lelekkel visszamaszol az agyba. \nENDING: LESZ@ROM",
 			"answers": [
 				{
-					"reply" : "END",
+					"reply" : "Folytatas",
 					"frame_id" : 999
 				}
 			]
@@ -123,24 +123,32 @@
 			"text": "'Joreggelt, latom sikerult kimaszni az agybol. Tobbet ilyen ne forduljon elo legyszives! Na, nyomas, sok dolgunk van'\nValami azt sugallja, nincs minden rendben.",
 			"answers": [
 				{
-					"reply" : "Valami baj van fonok?",
+					"reply" : "Valami baj van?",
 					"frame_id" : 12
-				}
-			]
-		},
-		{
-			"id": 10,
-			"text": "Joreggelt, csak sikerult megerkezni. Te maratont futottal, hogy igy le vagy izzadva? Mindegy, hutsd le magad, es tobbet ilyen ne forduljon elo legyszives! Na, nyomas, sok dolgunk van'\nA passziv-agressziv hanglejtese azt sugallja, nincs minden rendben.",
-			"answers": [
+				},
 				{
-					"reply" : "Folytatas",
+					"reply" : "Na, mit kevertek a kavejaba fonok?",
 					"frame_id" : 11
 				}
 			]
 		},
 		{
+			"id": 10,
+			"text": "'Joreggelt, csak sikerult megerkezni. Te maratont futottal, hogy igy le vagy izzadva? Mindegy, hutsd le magad, es tobbet ilyen ne forduljon elo legyszives! Na, nyomas, sok dolgunk van'\nA passziv-agressziv hanglejtese azt sugallja, nincs minden rendben.'",
+			"answers": [
+				{
+					"reply" : "*flegma hangnemben* Koszi szepen!",
+					"frame_id" : 11
+				},
+				{
+					"reply" : "Bocs hogy kestem! Minden oke?",
+					"frame_id" : 12
+				}
+			]
+		},
+		{
 			"id": 11,
-			"text": "penis",
+			"text": "",
 			"answers": [
 				{
 					"reply" : "Folytatas",
