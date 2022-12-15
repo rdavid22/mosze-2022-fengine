@@ -94,13 +94,203 @@
 			"answers": [
 				{
 					"reply" : "Folytatas",
-					"frame_id" : 7
+					"frame_id" : 8
 				}
 			]
 		},
 		{
 			"id": 7,
-			"text": "TEMP RESET",
+			"text": "CHAPTER 2: SETUP.EXE \nSietve futsz be a nagy AllSafe Cybersecurity Inc. felirat alatt a fotocellas ajton, es gyermeki orommel latod hogy a a felvono pont nyitva all elotted, uresen. Gyorsan be is ugrasz, es nagy lendulettel nyomod meg a harmadik emelet gombjat.\nA liftbol kilepve egy tucat szempar tekintetenek sulyat erzed a vallaidon, de magadat nyugtatod azzal, hogy vegulis nem kestel olyan sokat, lehetett volna rosszabb is. A fonokod, Gideon is eszrevesz teged, es egy nem eppen derutol virulo arccal koszont",
+			"answers": [
+				{
+					"reply" : "Folytatas",
+					"frame_id" : 9
+				}
+			]
+		},
+		{
+			"id": 8,
+			"text": "CHAPTER 2: SETUP.EXE \nSietve futsz be a nagy AllSafe Cybersecurity Inc. felirat alatt a fotocellas ajton, es gyermeki orommel latod hogy a a felvono pont nyitva all elotted, uresen. Gyorsan be is ugrasz, es nagy lendulettel nyomod meg a harmadik emelet gombjat.\nA liftbol kilepve egy tucat szempar tekintetenek sulyat erzed a vallaidon, de magadat nyugtatod azzal, hogy vegulis nem kestel olyan sokat, lehetett volna rosszabb is. A fonokod, Gideon is eszrevesz teged, es egy nem eppen derutol virulo arccal koszont",
+			"answers": [
+				{
+					"reply" : "Folytatas",
+					"frame_id" : 10
+				}
+			]
+		},
+		{
+			"id": 9,
+			"text": "'Joreggelt, latom sikerult kimaszni az agybol. Tobbet ilyen ne forduljon elo legyszives! Na, nyomas, sok dolgunk van'\nValami azt sugallja, nincs minden rendben.",
+			"answers": [
+				{
+					"reply" : "Valami baj van fonok?",
+					"frame_id" : 12
+				}
+			]
+		},
+		{
+			"id": 10,
+			"text": "Joreggelt, csak sikerult megerkezni. Te maratont futottal, hogy igy le vagy izzadva? Mindegy, hutsd le magad, es tobbet ilyen ne forduljon elo legyszives! Na, nyomas, sok dolgunk van'\nA passziv-agressziv hanglejtese azt sugallja, nincs minden rendben.",
+			"answers": [
+				{
+					"reply" : "Folytatas",
+					"frame_id" : 11
+				}
+			]
+		},
+		{
+			"id": 11,
+			"text": "penis",
+			"answers": [
+				{
+					"reply" : "Folytatas",
+					"frame_id" : 999
+				}
+			]
+		},
+		{
+			"id": 12,
+			"text": "penis",
+			"answers": [
+				{
+					"reply" : "Folytatas",
+					"frame_id" : 999
+				}
+			]
+		},
+		{
+			"id": 13,
+			"text": "penis",
+			"answers": [
+				{
+					"reply" : "Folytatas",
+					"frame_id" : 999
+				}
+			]
+		},
+		{
+			"id": 14,
+			"text": "penis",
+			"answers": [
+				{
+					"reply" : "Folytatas",
+					"frame_id" : 999
+				}
+			]
+		},
+		{
+			"id": 15,
+			"text": "penis",
+			"answers": [
+				{
+					"reply" : "Folytatas",
+					"frame_id" : 999
+				}
+			]
+		},
+		{
+			"id": 16,
+			"text": "penis",
+			"answers": [
+				{
+					"reply" : "Folytatas",
+					"frame_id" : 999
+				}
+			]
+		},
+		{
+			"id": 17,
+			"text": "penis",
+			"answers": [
+				{
+					"reply" : "Folytatas",
+					"frame_id" : 999
+				}
+			]
+		},
+		{
+			"id": 18,
+			"text": "penis",
+			"answers": [
+				{
+					"reply" : "Folytatas",
+					"frame_id" : 999
+				}
+			]
+		},
+		{
+			"id": 19,
+			"text": "penis",
+			"answers": [
+				{
+					"reply" : "Folytatas",
+					"frame_id" : 999
+				}
+			]
+		},
+		{
+			"id": 20,
+			"text": "penis",
+			"answers": [
+				{
+					"reply" : "Folytatas",
+					"frame_id" : 999
+				}
+			]
+		},
+		{
+			"id": 21,
+			"text": "penis",
+			"answers": [
+				{
+					"reply" : "Folytatas",
+					"frame_id" : 999
+				}
+			]
+		},
+		{
+			"id": 22,
+			"text": "penis",
+			"answers": [
+				{
+					"reply" : "Folytatas",
+					"frame_id" : 999
+				}
+			]
+		},
+		{
+			"id": 23,
+			"text": "penis",
+			"answers": [
+				{
+					"reply" : "Folytatas",
+					"frame_id" : 999
+				}
+			]
+		},
+		{
+			"id": 24,
+			"text": "penis",
+			"answers": [
+				{
+					"reply" : "Folytatas",
+					"frame_id" : 999
+				}
+			]
+		},
+		{
+			"id": 25,
+			"text": "penis",
+			"answers": [
+				{
+					"reply" : "Folytatas",
+					"frame_id" : 999
+				}
+			]
+		},
+		{
+			"id": 26,
+			"text": "penis",
 			"answers": [
 				{
 					"reply" : "Folytatas",
@@ -108,5 +298,6 @@
 				}
 			]
 		}
+
 	]
 }
