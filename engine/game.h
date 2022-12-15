@@ -9,7 +9,6 @@
 #include "menu.h"
 #include "helper.h"
 
-
 class Game
 {
 private:
@@ -63,17 +62,20 @@ public:
             }
             else if (input == "wat")
             {
-                //system("start https://cdn.eteknix.com/wp-content/uploads/2017/12/1-31.jpg");
+                // system("start https://cdn.eteknix.com/wp-content/uploads/2017/12/1-31.jpg");
                 continue;
             }
-            else if (StartsWith(input,"go"))
+            else if (StartsWith(input, "go"))
             {
-                auto parts = Split(input," ");
+                auto parts = Split(input, " ");
                 int id = std::stoi(parts[1]);
                 current_frame_ = GetFrameById(id);
                 continue;
             }
-            GoToFrame(std::stoi(input));
+            if(is_number(input))
+            {
+                GoToFrame(std::stoi(input));
+            }
         }
     }
 
@@ -112,6 +114,13 @@ public:
             }
         }
         return Frame();
+    }
+    bool is_number(const std::string &s)
+    {
+        std::string::const_iterator it = s.begin();
+        while (it != s.end() && std::isdigit(*it))
+            ++it;
+        return !s.empty() && it == s.end();
     }
 };
 
