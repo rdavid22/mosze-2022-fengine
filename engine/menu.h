@@ -71,7 +71,10 @@ public:
             }
             ResetPlayers();
         }
-
+        else if(option== "exit")
+        {
+            exit(3);
+        }
         else
         {
            Console.WriteLine("Nincs ilyen opcio!",RED);
