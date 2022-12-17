@@ -210,20 +210,20 @@
 		},
 		{
 			"id": 16,
-			"text": "'Fogalmam sincs. Ha annyira izgatnak a reszletek, kerdezd Elliotot, mar ha egyaltalan szoba all veled. En kimegyek egy kaveert'",
+			"text": "'Fogalmam sincs. Ha annyira izgatnak a reszletek, kerdezd Elliotot, mar ha egyaltalan szoba all veled. En kimegyek egy kaveert.'\nLloyd felall, es mint aki jol vegezte dolgat, magabiztos leptekkel kisetal az irodabol. Lloyd sosem volt az az idegeskedos tipus, de valahogy mindig is olyan furcsa volt, hogy ennyire nem zavarja semmi sem. Visszaemlekszel a multkori ransomware tamadasra, ami eszkozok ezreit megfertozte, es tobb, nagyobb ceg is aldozataul esett. Lloyd mar akkor is ugy viselkedett, mint akit egyaltalan nem erint az egesz.\nSzerencsere a virus eleg rozoga modon lett osszerakva, igy a veszelyt viszonylag hamar sikerult megszuntetni. Valamiert viszont ugy erzed, hogy a mostani breachnek lehet valami koze hozza.\nMit teszel?",
 			"answers": [
 				{
-					"reply" : "Folytatas",
+					"reply" : "",
 					"frame_id" : 999
 				}
 			]
 		},
 		{
 			"id": 17,
-			"text": "penis",
+			"text": "'Lehet... Mindenesetre en kiugrok egy kaveert. Te nem kersz?'",
 			"answers": [
 				{
-					"reply" : "Folytatas",
+					"reply" : "Nem, kosz",
 					"frame_id" : 999
 				}
 			]
