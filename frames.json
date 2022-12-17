@@ -1,6 +1,16 @@
 {
 	"frames": [
 		{
+			"id": 998,
+			"text": "THANK YOU FOR PLAYING THE DEMO\nDO YOU WANT TO PLAY AGAIN\n\nType 'load' to load previous save!\nType 'exit' to quit!",
+			"answers": [
+				{
+					"reply":"Play again",
+					"frame_id" : 0
+				}
+			]
+		},
+		{
 			"id": 999,
 			"text": "GAME OVER! RETRY? \n\nType 'load' to load previous save!\nType 'exit' to quit!",
 			"answers": [
@@ -22,7 +32,7 @@
 		},
 		{
 			"id": 1,
-			"text": "CHAPTER 1: INTRO.EXE \nLassan kinyitod a szemed. 7:51-et mutat az ora. Ataludtad az ebresztodet es 10 percen belul be kell erned a munkahelyre. Panikolva kikelsz az agyadbol es magadra huzod a ruhaidat. \nElotted a haloszobad ket ajtaja, egyik a konyhaba vezet, masik a furdoszobaba. Mit teszel?",
+			"text": "CHAPTER 1: INTRO.TXT \nLassan kinyitod a szemed. 7:51-et mutat az ora. Ataludtad az ebresztodet es 10 percen belul be kell erned a munkahelyre. Panikolva kikelsz az agyadbol es magadra huzod a ruhaidat. \nElotted a haloszobad ket ajtaja, egyik a konyhaba vezet, masik a furdoszobaba. Mit teszel?",
 			"answers": [
 				{
 					"reply":"Furdoszoba",
@@ -42,7 +52,7 @@
 		},
 		{
 			"id": 2,
-			"text": "Sietve berohansz a furdobe. Egy kezzel a fogkefehez nyulsz, masikkal meg az ingedet igazitod. Nagy kapkodasodkozepette valahogy sikerul feloltoznod es megmosnod a fogad, de a reggelire mar ugy nez ki, nem lesz ido. Felkapod a taskadat, majd kirohansz az ajton. \nToled balra a kocsibejarodban all a autod, mogotte a garazsban a falnak tamasztva a biciklid. 5 perced van beerni munkaba. Mit teszel?",
+			"text": "Sietve berohansz a furdobe. Egy kezzel a fogkefehez nyulsz, masikkal meg az ingedet igazitod. Nagy kapkodasod kozepette valahogy sikerul feloltoznod es megmosnod a fogad, de a reggelire mar ugy nez ki, nem lesz ido. Felkapod a taskadat, majd kirohansz az ajton. \nToled balra a kocsibejarodban all a autod, mogotte a garazsban a falnak tamasztva a biciklid. 5 perced van beerni munkaba. Mit teszel?",
 			"answers": [
 				{
 					"reply" : "Auto",
@@ -56,10 +66,10 @@
 		},
 		{
 			"id": 3,
-			"text": "Kifutsz a konyhaba, egy gyors mozdulattal kirantod ahutoajtot majd kiveszel belole egy bontott csomag parizert, szeletelt sajtot es vajat. Rekordsebesseggel kened meg az utolso ket megmaradt szelet kenyeret, osszedobsz egy gyors szendvicset, es meg ugyanazzal a lendulettel a felet a szadba tomod. Az orad mar 7:55-ot mutat, ugy latszik kenytelen leszel kihagyni a mosakodast. Felkapod a taskadat, majd kirohansz az ajton. \nToled balra a kocsibejarodban all a autod, mogotte a garazsban a falnak tamasztva a biciklid. 5 perced van beerni munkaba. \nMit teszel?",
+			"text": "Kifutsz a konyhaba, egy gyors mozdulattal kirantod a hutoajtot majd kiveszel belole egy bontott csomag parizert, szeletelt sajtot es vajat. Rekordsebesseggel kened meg az utolso ket megmaradt szelet kenyeret, osszedobsz egy gyors szendvicset, es meg ugyanazzal a lendulettel a felet a szadba tomod. Az orad mar 7:55-ot mutat, ugy latszik kenytelen leszel kihagyni a mosakodast. Felkapod a taskadat, majd kirohansz az ajton. \nToled balra a kocsibejarodban all a autod, mogotte a garazsban a falnak tamasztva a biciklid. 5 perced van beerni munkaba. \nMit teszel?",
 			"answers": [
 				{
-					"reply" : "Auto!",
+					"reply" : "Auto",
 					"frame_id" : 5
 				},
 				{
@@ -70,7 +80,7 @@
 		},
 		{
 			"id": 4,
-			"text": "Veszel egy nagy levegot, megallsz egy pillanatra es elgondolkodsz magadban: 'miert is kene kapkodnom? Minek panikoljak? Mar ugyis mindegy, nem erdekel az egesz!' Elegedett fejjel sohajtasz egyet, kihuzod a vekkert a konnektorbol, majd nyugodt lelekkel visszamaszol az agyba. \nENDING: LESZ@ROM",
+			"text": "Veszel egy nagy levegot, megallsz egy pillanatra es elgondolkodsz magadban: 'miert is kene kapkodnom? Minek panikoljak? Mar ugyis mindegy, nem erdekel az egesz!' Elegedett fejjel sohajtasz egyet, kihuzod a vekkert a konnektorbol, majd nyugodt lelekkel visszamaszol az agyba. \nENDING: LAZINESS",
 			"answers": [
 				{
 					"reply" : "Folytatas",
@@ -203,7 +213,7 @@
 					"frame_id" : 16
 				},
 				{
-					"reply" : "Vagy lehet hogy csak nagyon alaposan kitakaritottak maguk utan.",
+					"reply" : "Vagy lehet, hogy csak nagyon alaposan kitakaritottak maguk utan.",
 					"frame_id" : 17
 				}
 			]
@@ -266,7 +276,7 @@
 		},
 		{
 			"id": 20,
-			"text": "'Hagyj dolgozni kérlek.'",
+			"text": "'Hagyj dolgozni kerlek.'",
 			"answers": [
 				{
 					"reply" : "Akkor cseszd meg!",
@@ -314,7 +324,7 @@
 		},
 		{
 			"id": 24,
-			"text": "'Ugyanannyit tudok amennyit te. Legyszives, hagyj dolgozni.'",
+			"text": "'Ugyanannyit tudok, mint amennyit barki mas. Legyszives, hagyj dolgozni.'",
 			"answers": [
 				{
 					"reply" : "'...'",
@@ -362,7 +372,7 @@
 			"answers": [
 				{
 					"reply" : "Letoltom a csatolmanyt",
-					"frame_id" : 999
+					"frame_id" : 30
 				},
 				{
 					"reply" : "Torlom",
@@ -382,61 +392,80 @@
 		},
 		{
 			"id": 30,
-			"text": "sample",
+			"text": "CHAPTER 3: README.NFO\nA geped is figyelemre int: 'Potencialisan veszelyes csatolmany. Biztosan letolti?' Az igenre kattintva elgondolkodsz: mi ez a faljformatum? Miert nem szimpla txt? A par kB-os fajl mar le is jott, biztonsag kedveert mindenekelott kihuzod a LAN-kabelt a gepedbol. Jegyzettombbel tarsitva megnyitod a fajlt.",
 			"answers": [
 				{
 					"reply" : "Folytatas",
-					"frame_id" : 999
+					"frame_id" : 31
 				}
 			]
 		},
 		{
 			"id": 31,
-			"text": "sample",
+			"text": "A falj egy stringet tartalmaz:\n'Lpivh ol nishdjmq jdippqsz fyvnyjxepocttq iwws btexfdb wncirfyaw'\nVajon milyen modszerrel titkosithattak? ",
 			"answers": [
 				{
-					"reply" : "Folytatas",
-					"frame_id" : 999
+					"reply" : "Caesar-titkositas",
+					"frame_id" : 32
+				},
+				{
+					"reply" : "Viginere-titkositas",
+					"frame_id" : 33
 				}
+
 			]
 		},
 		{
 			"id": 32,
-			"text": "sample",
+			"text": "Elsokent a Caesar-titkositas jut eszedbe, az hasonloan nez ki. Vegigfuttatod egy decoderen, de egy ertelmetlen stringet kapsz.",
 			"answers": [
 				{
 					"reply" : "Folytatas",
-					"frame_id" : 999
+					"frame_id" : 31
 				}
 			]
 		},
 		{
 			"id": 33,
-			"text": "sample",
+			"text": "Kis gondolkodas utan arra a kovetkeztetesre jutsz, hogy biztosan Viginere-kodolast hasznaltak. Ha viszont ez igaz, akkor szukseg van egy kulcsszora, ami alapjan dekodolni lehet, hiszen polialfabetikus kodolasrol van szo, azaz tobb (viginere eseteben 2) helyettesito abecet hasznaltak egy tablazatban. Kerdes tehat, hol lehet az a bizonyos kulcsszo?\nVisszapillantasz az e-mailre, hatha van benne valami, ami nyomra vezet. A mondatok kozott fennakad a szemed nehany betun, ami furcsa modon dolt betuvel van kijelolve. Elkezded kimasolgatni a betuket egy jegyzettombe, amibol a kovetkezo szot kapod:.\n'FREEDOM'",
 			"answers": [
 				{
 					"reply" : "Folytatas",
-					"frame_id" : 999
+					"frame_id" : 34
 				}
 			]
 		},
 		{
 			"id": 34,
-			"text": "sample",
+			"text": "Beilleszted a szoveget es a kulcsszot a dekodolo szoftverbe, majd remegve ranyomsz a Decode gombra. A kovetkezo mondat fogad:.\n'Gyere az irodaval szembeni buszmegallohoz este pontban kilenckor'\nHevesen elkezd verni a szived. Ez biztos valami trefa, gondolod magadban. De mivan ha megsem? Megis miert? Mi ez az egesz? Elont a panikhangulat, es intenziven lelegezve, tetlenul nezel magad ele.Ekkor felbukkan Lloyd, egy csesze kaveval a kezeben. Odaszol hozzad:\n'Mivan, szellemet lattal?'\nRengeteg gondolat kavarog a fejedben. Erdemes lenne beleavatni? Mi van ha tenyleg csak egy trefa az egesz?\nMegmutatod Lloydnak az uzenetet?",
 			"answers": [
 				{
-					"reply" : "Folytatas",
-					"frame_id" : 999
+					"reply" : "Igen",
+					"frame_id" : 35
+				},
+				{
+					"reply" : "Nem",
+					"frame_id" : 37
 				}
 			]
 		},
 		{
 			"id": 35,
-			"text": "sample",
+			"text": "Megmutatod Lloydnak az e-mailt es az abban talalt dekodolt uzenetet. Lloyd erdeklodo, de kicsit szkeptikusnak tuno tekintettel nezi a monitort, felhuzott szemoldokkel figyel arra amit mondasz. A vegen elmosolyodik, majd megszolal:\n'Te most szivatni akarsz ugye? Ez valami hulye vicc? Miert csinalna ilyet barki is? Ha valaki tenyleg teged akarna felkeresni, akkor kuldene egy levelet a hazadhoz vagy ilyesmi. Rajtad kivul szerintem a vilagon senki nem tudja mi a fene az a Viginer vagy mi a franc. Hagyjal mar a baromsagaiddal, tul sokat latsz bele ebbe a breach dologba. Inkabb igyal te is egy kavet!.'\nAlig akarod elhinni, amit Lloyd mondott. Az egy dolog, hogy alapbol nem egy porgos tipus, de hogy gondolhatja hogy ezt te talaltad ki? Miert nem hisz neked? Tan hulyenek nez? Legszivesebben leorditanad, de inkabb felallsz, es kimesz a mosdoba.",
 			"answers": [
 				{
-					"reply" : "Folytatas",
-					"frame_id" : 999
+					"reply" : "END",
+					"frame_id" : 998
+				}
+			]
+		},
+		{
+			"id": 37,
+			"text": "Ugy dontesz, inkabb kihagyod ot ebbol, ugyse hinne neked. Lesutott szemmel valaszolsz neki:\n'Ja, semmi, csak elbambultam.'\nMire Lloyd:\n'Ne porgesd tul magad ezen a breach dolgon. Volt mar ennel rosszabb is. Inkabb igyal egy kavet, az jot tesz'\nLloyd visszaul a gepehez, te pedig tovabbra is ures tekintettel, tetlenul nezel magad ele. Megjelenik egy Teams ertesites, miszerint 10 perc mulva meeting lesz egy partnerceggel. Felallsz, majd kifutsz a mosdoba, hogy megprobald osszeszedni magad.",
+			"answers": [
+				{
+					"reply" : "END",
+					"frame_id" : 998
 				}
 			]
 		}
