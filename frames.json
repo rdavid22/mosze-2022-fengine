@@ -2,7 +2,7 @@
 	"frames": [
 		{
 			"id": 999,
-			"text": "GAME OVER! RETRY? \n\nType 'exit' to quit!",
+			"text": "GAME OVER! RETRY? \n\nType 'load' to load previous save!\nType 'exit' to quit!",
 			"answers": [
 				{
 					"reply":"Retry",
@@ -12,7 +12,7 @@
 		},
 		{
 			"id": 0,
-			"text": "SYSTEM INITIALIZED. BETA VERSION 0.6\nWELCOME!\n\nType'save' to save your progress!\nType 'exit' to quit!",
+			"text": "SYSTEM INITIALIZED. BETA VERSION 0.6\nWELCOME!\n\nType 'save' to save your progress!\nType 'exit' to quit!",
 			"answers": [
 				{
 					"reply":"Folytatas",
@@ -335,6 +335,96 @@
 		{
 			"id": 26,
 			"text": "Ez nem jott ossze. Rendkivul kinosan, furan erezve magad, visszaballagsz az asztalodhoz.",
+			"answers": [
+				{
+					"reply" : "Folytatas",
+					"frame_id" : 27
+				}
+			]
+		},
+		{
+			"id": 27,
+			"text": "Bejelentkezel, megnyitod az e-mailjeid és a Teams klienst, hátha többet megtudsz, miről maradtál le, ",
+			"answers": [
+				{
+					"reply" : "Folytatas",
+					"frame_id" : 999
+				}
+			]
+		},
+		{
+			"id": 28,
+			"text": "sample",
+			"answers": [
+				{
+					"reply" : "Folytatas",
+					"frame_id" : 999
+				}
+			]
+		},
+		{
+			"id": 29,
+			"text": "sample",
+			"answers": [
+				{
+					"reply" : "Folytatas",
+					"frame_id" : 999
+				}
+			]
+		},
+		{
+			"id": 30,
+			"text": "sample",
+			"answers": [
+				{
+					"reply" : "Folytatas",
+					"frame_id" : 999
+				}
+			]
+		},
+		{
+			"id": 31,
+			"text": "sample",
+			"answers": [
+				{
+					"reply" : "Folytatas",
+					"frame_id" : 999
+				}
+			]
+		},
+		{
+			"id": 32,
+			"text": "sample",
+			"answers": [
+				{
+					"reply" : "Folytatas",
+					"frame_id" : 999
+				}
+			]
+		},
+		{
+			"id": 33,
+			"text": "sample",
+			"answers": [
+				{
+					"reply" : "Folytatas",
+					"frame_id" : 999
+				}
+			]
+		},
+		{
+			"id": 34,
+			"text": "sample",
+			"answers": [
+				{
+					"reply" : "Folytatas",
+					"frame_id" : 999
+				}
+			]
+		},
+		{
+			"id": 35,
+			"text": "sample",
 			"answers": [
 				{
 					"reply" : "Folytatas",
