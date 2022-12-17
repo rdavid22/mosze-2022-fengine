@@ -38,7 +38,7 @@ public:
         Console.WriteLine("2 - jatekos letrehozasa",BLUE);
         Console.WriteLine("3 - jatekos torlese",BLUE);
         Console.WriteLine("4 - jatekosok torlese",BLUE);
-        Console.WriteLine("5 - dani specialis kerese",BLUE);
+       // Console.WriteLine("5 - dani specialis kerese",BLUE);
     }
 
     void GetMenuOption()
