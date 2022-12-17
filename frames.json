@@ -148,11 +148,11 @@
 		},
 		{
 			"id": 11,
-			"text": "",
+			"text": "'Ezt inkabb meg sem hallottam. Munkara!",
 			"answers": [
 				{
 					"reply" : "Folytatas",
-					"frame_id" : 999
+					"frame_id" : 13
 				}
 			]
 		},
