@@ -148,27 +148,27 @@
 		},
 		{
 			"id": 11,
-			"text": "",
+			"text": "'Ezt inkabb meg sem hallottam. Munkara!'",
 			"answers": [
 				{
 					"reply" : "Folytatas",
-					"frame_id" : 999
+					"frame_id" : 13
 				}
 			]
 		},
 		{
 			"id": 12,
-			"text": "penis",
+			"text": "'Azon kivul hogy lemaradtal a reggeli stand up meetingrol? Amiben ertesitettunk mindenkit a tegnap keso esti breach-rol?'",
 			"answers": [
 				{
-					"reply" : "Folytatas",
-					"frame_id" : 999
+					"reply" : "Ez komoly? Basszus!",
+					"frame_id" : 13
 				}
 			]
 		},
 		{
 			"id": 13,
-			"text": "penis",
+			"text": "Odakocogsz az asztalodhoz, ledobod a taskadat es bekapcsolod a gepedet. ",
 			"answers": [
 				{
 					"reply" : "Folytatas",
