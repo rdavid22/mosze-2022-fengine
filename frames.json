@@ -22,7 +22,7 @@
 		},
 		{
 			"id": 1,
-			"text": "CHAPTER 1: INTRO.EXE \nLassan kinyitod a szemed. 7:51-et mutat az ora. Ataludtad az ebresztodet es 10 percen belul be kell erned a munkahelyre. Panikolva kikelsz az agyadbol es magadra huzod a ruhaidat. \n Elotted a haloszobad ket ajtaja, egyik a konyhaba vezet, masik a furdoszobaba. Mit teszel?",
+			"text": "CHAPTER 1: INTRO.EXE \nLassan kinyitod a szemed. 7:51-et mutat az ora. Ataludtad az ebresztodet es 10 percen belul be kell erned a munkahelyre. Panikolva kikelsz az agyadbol es magadra huzod a ruhaidat. \nElotted a haloszobad ket ajtaja, egyik a konyhaba vezet, masik a furdoszobaba. Mit teszel?",
 			"answers": [
 				{
 					"reply":"Furdoszoba",
@@ -42,7 +42,7 @@
 		},
 		{
 			"id": 2,
-			"text": "Sietve berohansz a furdobe. Egy kezzel a fogkefehez nyulsz, masikkal meg az ingedet igazitod. Nagy kapkodasodkozepette valahogy sikerul feloltoznod es megmosnod a fogad, de a reggelire mar ugy nez ki, nem lesz ido. Felkapod a taskadat, majd kirohansz az ajton. \n Toled balra a kocsibejarodban all a autod, mogotte a garazsban a falnak tamasztva a biciklid. 5 perced van beerni munkaba. Mit teszel?",
+			"text": "Sietve berohansz a furdobe. Egy kezzel a fogkefehez nyulsz, masikkal meg az ingedet igazitod. Nagy kapkodasodkozepette valahogy sikerul feloltoznod es megmosnod a fogad, de a reggelire mar ugy nez ki, nem lesz ido. Felkapod a taskadat, majd kirohansz az ajton. \nToled balra a kocsibejarodban all a autod, mogotte a garazsban a falnak tamasztva a biciklid. 5 perced van beerni munkaba. Mit teszel?",
 			"answers": [
 				{
 					"reply" : "Auto",
@@ -213,104 +213,128 @@
 			"text": "'Fogalmam sincs. Ha annyira izgatnak a reszletek, kerdezd Elliotot, mar ha egyaltalan szoba all veled. En kimegyek egy kaveert.'\nLloyd felall, es mint aki jol vegezte dolgat, magabiztos leptekkel kisetal az irodabol. Lloyd sosem volt az az idegeskedos tipus, de valahogy mindig is olyan furcsa volt, hogy ennyire nem zavarja semmi sem. Visszaemlekszel a multkori ransomware tamadasra, ami eszkozok ezreit megfertozte, es tobb, nagyobb ceg is aldozataul esett. Lloyd mar akkor is ugy viselkedett, mint akit egyaltalan nem erint az egesz.\nSzerencsere a virus eleg rozoga modon lett osszerakva, igy a veszelyt viszonylag hamar sikerult megszuntetni. Valamiert viszont ugy erzed, hogy a mostani breachnek lehet valami koze hozza.\nMit teszel?",
 			"answers": [
 				{
-					"reply" : "",
+					"reply" : "Nekiallok a munkanak",
 					"frame_id" : 999
+				},
+				{
+					"reply" : "Odamegyek Elliothoz",
+					"frame_id" : 18
 				}
 			]
 		},
 		{
 			"id": 17,
-			"text": "'Lehet... Mindenesetre en kiugrok egy kaveert. Te nem kersz?'",
+			"text": "'Lehet... Mindenesetre en kiugrok egy kaveert.'\nLloyd felall, es mint aki jol vegezte dolgat, magabiztos leptekkel kisetal az irodabol. Lloyd sosem volt az az idegeskedos tipus, de valahogy mindig is olyan furcsa volt, hogy ennyire nem zavarja semmi sem. Visszaemlekszel a multkori ransomware tamadasra, ami eszkozok ezreit megfertozte, es tobb, nagyobb ceg is aldozataul esett. Lloyd mar akkor is ugy viselkedett, mint akit egyaltalan nem erint az egesz.\nSzerencsere a virus eleg rozoga modon lett osszerakva, igy a veszelyt viszonylag hamar sikerult megszuntetni. Valamiert viszont ugy erzed, hogy a mostani breachnek lehet valami koze hozza.'",
 			"answers": [
 				{
-					"reply" : "Nem, kosz",
+					"reply" : "Folytatas",
 					"frame_id" : 999
 				}
 			]
 		},
 		{
 			"id": 18,
-			"text": "penis",
+			"text": "Felallsz az geped elol, es kicsit idegesen odasetalsz Elliot asztalahoz. \nKozismerten maganak valo, sztoikus, rendkivul visszahuzodo, olykor-olykor egyenesen bunko. Te valahogy megis tobbet latsz benne. Nem titok, hogy eszmeletlenul intelligens, abszolut profi a szakmajaban. Nem tudod eldonteni hogy rejteget valamit, vagy csak depresszios es sulyos gondjai vannak, esetleg mindketto.\n Annyi biztos, hogy vele mar szobaallni is nehez ugy. Hogy inditasz?'",
 			"answers": [
 				{
-					"reply" : "Folytatas",
-					"frame_id" : 999
+					"reply" : "Elliot, szia! Bocsi, zavarhatlak egy pillanatra?",
+					"frame_id" : 19
+				},
+				{
+					"reply" : "Csao, mi a palya? Hallod, hadd kerdezzek valamit!",
+					"frame_id" : 19
+				},
+				{
+					"reply" : "...",
+					"frame_id" : 21
 				}
 			]
 		},
 		{
 			"id": 19,
-			"text": "penis",
+			"text": "'Nem'",
 			"answers": [
 				{
-					"reply" : "Folytatas",
-					"frame_id" : 999
+					"reply" : "Tudsz valamit errol a breach dologrol?",
+					"frame_id" : 24
+				},
+				{
+					"reply" : "Naa, ne legyel mar ilyen!",
+					"frame_id" : 20
 				}
 			]
 		},
 		{
 			"id": 20,
-			"text": "penis",
+			"text": "'Hagyj dolgozni kérlek.'",
 			"answers": [
 				{
-					"reply" : "Folytatas",
-					"frame_id" : 999
+					"reply" : "Akkor cseszd meg!",
+					"frame_id" : 26
+				},
+				{
+					"reply" : "Tudsz valamit errol a breach dologrol?",
+					"frame_id" : 24
 				}
 			]
 		},
 		{
 			"id": 21,
-			"text": "penis",
+			"text": "'...''",
 			"answers": [
 				{
-					"reply" : "Folytatas",
-					"frame_id" : 999
+					"reply" : "'...'",
+					"frame_id" : 22
 				}
 			]
 		},
 		{
 			"id": 22,
-			"text": "penis",
+			"text": "'...'",
 			"answers": [
 				{
-					"reply" : "Folytatas",
-					"frame_id" : 999
+					"reply" : "'...'",
+					"frame_id" : 23
 				}
 			]
 		},
 		{
 			"id": 23,
-			"text": "penis",
+			"text": "'...mi van?'",
 			"answers": [
 				{
-					"reply" : "Folytatas",
-					"frame_id" : 999
+					"reply" : "Tudsz valamit errol a breach dologrol?",
+					"frame_id" : 24
+				},
+				{
+					"reply" : "Jah, ooo ize, semmi...",
+					"frame_id" : 25
 				}
 			]
 		},
 		{
 			"id": 24,
-			"text": "penis",
+			"text": "'Ugyanannyit tudok amennyit te. Legyszives, hagyj dolgozni.'",
 			"answers": [
 				{
-					"reply" : "Folytatas",
-					"frame_id" : 999
+					"reply" : "'...'",
+					"frame_id" : 26
 				}
 			]
 		},
 		{
 			"id": 25,
-			"text": "penis",
+			"text": "Elliot ertetlenkedve nez rad, majd vissza a monitorjara, es folytatja a munkat.",
 			"answers": [
 				{
 					"reply" : "Folytatas",
-					"frame_id" : 999
+					"frame_id" : 26
 				}
 			]
 		},
 		{
 			"id": 26,
-			"text": "penis",
+			"text": "Ez nem jott ossze. Rendkivul kinosan, furan erezve magad, visszaballagsz az asztalodhoz.",
 			"answers": [
 				{
 					"reply" : "Folytatas",
