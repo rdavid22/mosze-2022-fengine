@@ -45,7 +45,9 @@ enum colors
 class MConsole
 {
 private:
+#if _WIN32
     HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+#endif
     void SetColor(colors color)
     {
 #if _WIN32
