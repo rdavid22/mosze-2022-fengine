@@ -55,6 +55,11 @@ public:
                 Console.WriteLine("Sikeresen mentve!",PURPLE);
                 continue;
             }
+             else if (input == "load")
+            {
+                current_frame_ = GetFrameById(current_player_.GetFrameId());
+                continue;
+            }
             else if (input == "reset")
             {
                 current_frame_ = GetFrameById(0);
