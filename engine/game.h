@@ -43,7 +43,7 @@ public:
         while (!exit_game_)
         {
             PrintFrame();
-            std::string input = console::input();
+            std::string input = Console.ReadLine();
             if (input == "exit")
             {
                 return;
@@ -52,7 +52,7 @@ public:
             {
                 current_player_.SetFrameId(current_frame_.GetId());
                 SavePlayer(current_player_);
-                console::printLine(PURPLE, "Sikeresen mentve!");
+                Console.WriteLine("Sikeresen mentve!",PURPLE);
                 continue;
             }
             else if (input == "reset")
@@ -81,13 +81,13 @@ public:
 
     void PrintFrame()
     {
-        console::clear();
+        Console.Clear();
         // Animáció ideiglenesen törlésre kerülhet tesztelés idejéig
-        console::printLine(GREEN, current_frame_.GetText());
+        Console.WriteLine(current_frame_.GetText(),GREEN);
         uint16_t selector = 1;
         for (auto answers : current_frame_.GetAnswers())
         {
-            console::printLine(BLUE, std::to_string(selector) + ": " + answers.GetText());
+            Console.WriteLine(std::to_string(selector) + ": " + answers.GetText(),BLUE);
             selector++;
         }
     }
