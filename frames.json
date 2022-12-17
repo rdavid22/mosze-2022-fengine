@@ -168,37 +168,49 @@
 		},
 		{
 			"id": 13,
-			"text": "Odakocogsz az asztalodhoz, ledobod a taskadat es bekapcsolod a gepedet. ",
+			"text": "Odakocogsz az asztalodhoz, ledobod a taskadat es bekapcsolod a gepedet. A szomszed asztaltol Lloyd odakoszon.\n'Hali! Miujsag, elaludtal?'",
 			"answers": [
 				{
-					"reply" : "Folytatas",
-					"frame_id" : 999
+					"reply" : "Ja, sajnos. Te figyelj, mi ez a nagy felhajtas, mi folyik itt?",
+					"frame_id" : 14
+				},
+				{
+					"reply" : "Mi baja van a fonoknek? Mirol maradtam le?",
+					"frame_id" : 14
 				}
 			]
 		},
 		{
 			"id": 14,
-			"text": "penis",
+			"text": "'Ja, nem nagy cucc. Network management-esek szerint tegnap keso este valaki vagy valakik bejutottak a halozatra.",
 			"answers": [
 				{
-					"reply" : "Folytatas",
-					"frame_id" : 999
+					"reply" : "Nem nagy cucc?! Egy breach azert elegge 'nagy cucc', mar ne is haragudj!",
+					"frame_id" : 15
+				},
+				{
+					"reply" : "*nevetve* Ahhoz kepest eleg nyugodtnak tunsz.",
+					"frame_id" : 15
 				}
 			]
 		},
 		{
 			"id": 15,
-			"text": "penis",
+			"text": "'Azota sem talaltunk semmit. Latszolag semmi kar nem keletkezett, virusra utalo nyomokat sem talaltunk. Mintha tok veletlenul tortent volna ez az egesz.'",
 			"answers": [
 				{
-					"reply" : "Folytatas",
-					"frame_id" : 999
+					"reply" : "Azt lehet tudni, pontosan hova es hogyan jutottak be? Vagy hogy egyaltalan bent vannak meg??",
+					"frame_id" : 16
+				},
+				{
+					"reply" : "Vagy lehet hogy csak nagyon alaposan kitakaritottak maguk utan.",
+					"frame_id" : 17
 				}
 			]
 		},
 		{
 			"id": 16,
-			"text": "penis",
+			"text": "'Fogalmam sincs. Ha annyira izgatnak a reszletek, kerdezd Elliotot, mar ha egyaltalan szoba all veled. En kimegyek egy kaveert'",
 			"answers": [
 				{
 					"reply" : "Folytatas",
