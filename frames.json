@@ -344,21 +344,29 @@
 		},
 		{
 			"id": 27,
-			"text": "Bejelentkezel, megnyitod az e-mailjeid és a Teams klienst, hátha többet megtudsz, miről maradtál le, ",
+			"text": "Bejelentkezel, megnyitod az e-mailjeid es a Teams klienst, hatha tobbet megtudsz, mirol maradtal le. Az Outlook e-mailjeid kozott azonban a Spam mappaban talalsz egy uzenetet neked cimezve, aminek a targya 'AllSafe Cybersecurity dolgozoi hirlevel', a kuldo pedig legnagyobb meglepetesedre nem mas, mint sajat magad.\nMit teszel?",
 			"answers": [
 				{
-					"reply" : "Folytatas",
-					"frame_id" : 999
+					"reply" : "Megnyitom",
+					"frame_id" : 28
+				},
+				{
+					"reply" : "Torlom",
+					"frame_id" : 29
 				}
 			]
 		},
 		{
 			"id": 28,
-			"text": "sample",
+			"text": "Tag szemekkel bamulod a kepernyod, megis miert kuldenel sajat magadnak egy spam e-mailt? Kivancsisagbol megnyitod. Az uzenet tartalma szinte teljesen ugyanaz, mint azok a napi hirlevelek, amiket szinte biztos, hogy soha senki nem olvas el, ez viszont csak neked lett cimezve.\nTovabb bogaraszod a mail tartalmat, amikor eszreveszel egy csatolmanyt: 'README.nfo'\nZavarodottsag es enyhe felelemerzet kevereke forog benned. Mi lehet ez a csatolmany? Miert egy hirlevelnek alcazott uzenetben lett kuldve? Miert en vagyok a felado? Es legfokeppen, miert nekem lett kuldve? Rengeteg kerdes forog benned, meg az is megfordul a fejedben, hogy lehet, hogy ennek valami koze lehet a tegnap esti breach-hez \nMit teszel?",
 			"answers": [
 				{
-					"reply" : "Folytatas",
+					"reply" : "Letoltom a csatolmanyt",
 					"frame_id" : 999
+				},
+				{
+					"reply" : "Torlom",
+					"frame_id" : 29
 				}
 			]
 		},
