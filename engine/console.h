@@ -7,6 +7,8 @@
 #include <windows.h>
 
 #else
+#include <unistd.h>
+#include <termios.h>
 #endif
 void SleepMS(uint64_t ms)
 {
