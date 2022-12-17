@@ -165,6 +165,7 @@ public:
     std::string ReadLine()
     {
         std::string in;
+        Write("\nparancs: ", YELLOW, true);
         std::getline(std::cin, in);
         return in;
     }

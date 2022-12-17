@@ -33,19 +33,20 @@ public:
 
     void PrintWelcomeScreen()
     {
+        Console.Clear();
         Console.WriteLine("\nMenu:",BLUE);
         Console.WriteLine("1 - jatekos betoltese",BLUE);
         Console.WriteLine("2 - jatekos letrehozasa",BLUE);
         Console.WriteLine("3 - jatekos torlese" ,BLUE);
-        Console.WriteLine("4 - jatekosok torlese",BLUE);
+        Console.WriteLine("4 - osszes jatekos torlese",BLUE);
+        Console.WriteLine("5 - elerheto parancsok", BLUE);
         Console.WriteLine("exit - kilepes",BLUE);
-       // Console.WriteLine("5 - dani specialis kerese",BLUE);
     }
 
     void GetMenuOption()
     {
         std::string option = Console.ReadLine();
-         if (option == "1")
+        if (option == "1")
         {
             LoadPlayerScreen();
         }
@@ -66,11 +67,7 @@ public:
         }
         else if (option == "5")
         {
-            for (int i = 0; i < all_player_.size(); i++)
-            {
-                all_player_[i].SetFrameId(0);
-            }
-            ResetPlayers();
+            PrintHelpScreen();
         }
         else if(option== "exit")
         {
@@ -78,7 +75,22 @@ public:
         }
         else
         {
-           Console.WriteLine("Nincs ilyen opcio!",RED);
+            Console.Clear();
+            Console.WriteLine("Nincs ilyen opcio!",RED);
+        }
+    }
+
+    void PrintHelpScreen()
+    {
+        Console.Clear();
+        Console.WriteLine("\nA jatekon belul elerheto parancsok listaja (visszalepes a 0 beirasaval):\n", GREEN);
+        Console.WriteLine("save  - jelenlegi allapot mentese.", BLUE);
+        Console.WriteLine("exit  - kilepes a jatekbol (elotte erdemes elmenteni a jatekot!).", BLUE);
+        Console.WriteLine("load  - betolti az elmentett jatekallapotot attol fuggetlenul, hol tartunk eppen a tortenetben.", BLUE);
+        Console.WriteLine("reset - visszaugrunk a tortenet legelejere. Nem befolyasolja a jatekmentest.", BLUE);
+        if(Console.ReadLine() == "0")
+        {
+            return;
         }
     }
 
@@ -88,31 +100,35 @@ public:
         std::string selected_player = Console.ReadLine();
         for (int i = 0; i < all_player_.size(); i++)
         {
+            // Check if player want to go back to main menu
+            if (selected_player == "0")
+            {
+                start_game_ = false;
+                return;
+            }
+
             // Check if player exist
-            if (selected_player == std::to_string(i + 1))
+            else if (selected_player == std::to_string(i + 1))
             {
                 current_player_ = all_player_[i];
                 start_game_ = true;
                 return;
             }
-            // Go back to main menu
-            else if (selected_player == "0")
-            {
-                start_game_ = false;
-                return;
-            }
         }
+        Console.Clear();
         Console.WriteLine( "A kivalasztott jatekos nem letezik!",RED);
         LoadPlayerScreen();
     }
 
     void CreatePlayerScreen()
     {
+        Console.Clear();
+        
         // Init player object.
         Player new_player;
 
         // Get user input.
-       Console.WriteLine("Jatekos neve: (kilepes a 0 beirasaval)",BLUE);
+        Console.WriteLine("Jatekos neve: (kilepes a 0 beirasaval)",BLUE);
         std::string user_input = Console.ReadLine();
 
         // Check if user wants to navigate back to the main menu.
@@ -180,7 +196,8 @@ public:
 
     void PrintAllPlayers()
     {
-        Console.WriteLine( "Osszes jatekos:",GREEN);
+        Console.Clear();
+        Console.WriteLine( "\nOsszes jatekos: (kilepes a 0 beirasaval)",GREEN);
         for (auto player : all_player_)
         {
             Console.WriteLine(player.GetName(),BLUE);

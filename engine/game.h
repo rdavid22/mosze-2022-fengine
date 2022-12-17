@@ -52,10 +52,10 @@ public:
             {
                 current_player_.SetFrameId(current_frame_.GetId());
                 SavePlayer(current_player_);
-                Console.WriteLine("Sikeresen mentve!",PURPLE);
+                Console.WriteLine("\nSikeresen mentve!",PURPLE);
                 continue;
             }
-             else if (input == "load")
+            else if (input == "load")
             {
                 current_frame_ = GetFrameById(current_player_.GetFrameId());
                 continue;
@@ -63,13 +63,6 @@ public:
             else if (input == "reset")
             {
                 current_frame_ = GetFrameById(0);
-                continue;
-            }
-            else if (StartsWith(input, "go"))
-            {
-                auto parts = Split(input, " ");
-                int id = std::stoi(parts[1]);
-                current_frame_ = GetFrameById(id);
                 continue;
             }
             if(is_number(input))
@@ -81,13 +74,12 @@ public:
 
     void PrintFrame()
     {
-        Console.Clear();
-        // Animáció ideiglenesen törlésre kerülhet tesztelés idejéig
-        Console.WriteLine(current_frame_.GetText(),GREEN);
+        Console.WriteLine("\n"+current_frame_.GetText(), GREEN, true);
         uint16_t selector = 1;
+        Console.WriteLine("",WHITE, false);
         for (auto answers : current_frame_.GetAnswers())
         {
-            Console.WriteLine(std::to_string(selector) + ": " + answers.GetText(),BLUE);
+            Console.WriteLine(std::to_string(selector) + ": " + answers.GetText(), BLUE, true);
             selector++;
         }
     }
