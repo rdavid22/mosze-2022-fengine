@@ -40,9 +40,15 @@ public:
     void Start()
     {
         current_frame_ = GetFrameById(current_player_.GetFrameId());
+        bool denialPrint = false;
         while (!exit_game_)
         {
-            PrintFrame();
+            if(!denialPrint)
+            {
+                PrintFrame();
+               
+            }
+             denialPrint = false;
             std::string input = Console.ReadLine();
             if (input == "exit")
             {
@@ -53,10 +59,12 @@ public:
                 current_player_.SetFrameId(current_frame_.GetId());
                 SavePlayer(current_player_);
                 Console.WriteLine("\nSikeresen mentve!",PURPLE);
+                denialPrint = true;
                 continue;
             }
             else if (input == "load")
             {
+                Console.Clear();
                 current_frame_ = GetFrameById(current_player_.GetFrameId());
                 continue;
             }
@@ -68,6 +76,11 @@ public:
             if(is_number(input))
             {
                 GoToFrame(std::stoi(input));
+            }
+            else
+            {
+                Console.WriteLine("Ervenytelen parancs!",RED,true);
+                denialPrint = true;
             }
         }
     }

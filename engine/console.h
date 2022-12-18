@@ -74,7 +74,7 @@ public:
 #else
                 std::cout << text[i] << std::flush;
 #endif
-                SleepMS(10);
+                SleepMS(5);
             }
         }
         else
